@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "rn-shared-header",
-    "slug": "rn-shared-header",
+    "name": "react-native-shared-header",
+    "slug": "react-native-shared-header",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
