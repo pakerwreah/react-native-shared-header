@@ -1,6 +1,6 @@
 {
-  "license": "0BSD",
   "name": "react-native-shared-header",
+  "license": "MIT",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
