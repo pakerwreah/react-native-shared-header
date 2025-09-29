@@ -32,6 +32,7 @@ type Props = {
   headerHeight: number;
   selectedIndex: number;
   animatedIndex?: SharedValue<number>;
+  disableIntervalMomentum?: boolean;
   onSelect(index: number): void;
 };
 
@@ -66,6 +67,7 @@ export const SharedHeaderPager = memo(function SharedHeaderPager({
   headerHeight,
   selectedIndex: _selectedIndex,
   animatedIndex,
+  disableIntervalMomentum = true,
   onSelect,
 }: Props) {
   const selectedIndex = useSharedValue(0);
@@ -144,6 +146,7 @@ export const SharedHeaderPager = memo(function SharedHeaderPager({
         snapToInterval={width}
         decelerationRate="fast"
         showsHorizontalScrollIndicator={false}
+        disableIntervalMomentum={disableIntervalMomentum}
         onScroll={scrollHandler}
       >
         {contents}
